@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins", sans-serif ;
+}
+:root{
+    --bg-color: black;
+    --text-color: white;
+    --main-color: #f79621;
+
+    --big-font: 4rem;
+    --p-font: 1rem;
+}
+.nav-btn{
+    display: inline-block;
+    padding: 9px 24px;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .6s ease;
+}
+.nav-btn:hover{
+    transform: translateY(-5px);
+    border: 2px solid var(white);
+    color: black;
+    background-color: white;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 27px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.listnav{
+    display: flex;
+}
+.listnav a{
+    display: inline-block;
+    margin: 0 35px;
+    color: var(--text-color);
+    font-size: var(--p-font);   
+    transition: all .6s ease;
+}
+.listnav a:hover{
+    display: flex;
+    align-items: center;
+}
+.contact{
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 45px 35px;
+
+}
+.container h2{
+    font-size: 45px;
+    margin-bottom: 40px;
+    color: white;
+}
+.contact-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+.form-group{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.contact-info{
+    text-align: left;
+}
+.contact-info h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+.contact-info p{
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+.contact-info i{
+    margin-right: 10px;
+    color: whitesmoke
+}
+.footer{
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
